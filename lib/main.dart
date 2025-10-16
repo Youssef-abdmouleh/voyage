@@ -10,11 +10,9 @@ import 'pages/authentification.page.dart';
 import 'pages/parametres.page.dart';
 import 'pages/pays.page.dart';
 
-
 void main() {
   runApp(MyApp());
 }
-
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -46,6 +44,5 @@ class MyApp extends StatelessWidget {
     '/authentification': (context) => AuthentificationPage(),
     '/parametres': (context) => ParametresPage(),
     '/pays': (context) => PaysPage(),
-
   };
 }

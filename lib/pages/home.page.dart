@@ -69,9 +69,10 @@ class HomePage extends StatelessWidget {
             ),
             InkWell(
               child: Ink.image(
-                  height: 100,
-                  width: 100,
-                  image: AssetImage('images/logout.png')),
+                height: 100,
+                width: 100,
+                image: AssetImage('images/logout.png'),
+              ),
               onTap: () {
                 _onDesconnection(context);
               },
@@ -81,6 +82,7 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
+
   Future<void> _onDesconnection(BuildContext context) async {
     prefs = await SharedPreferences.getInstance();
     prefs.setBool('connected', false);
