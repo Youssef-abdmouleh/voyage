@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ConnectionPage extends StatelessWidget {
-  TextEditingController txtUser =  TextEditingController();
-  TextEditingController txtPassword =  TextEditingController();
+  TextEditingController txtUser = TextEditingController();
+  TextEditingController txtPassword = TextEditingController();
   late SharedPreferences prefs;
 
   @override
